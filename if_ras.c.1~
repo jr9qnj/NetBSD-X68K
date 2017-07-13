@@ -31,30 +31,6 @@
  */
 
 /*
- * Driver forRaSCSI scsi ethernet adaptor.
- *
- * Written by Hiroshi Fujita(h-fujita@nsknet.or.jp)  2017/07/037
- *
- * Acknowledgement: Thanks are due to GIMONS?!!!!!!!!!.
- *
- * The RaSCSI is a device emulateor for Raspberry PI.
- * (URL:http://www.geocities.jp/kugimoto0715/rascsi/)
- * This software transrates RaspPI to SCSI connected device.
- * RaspPI emulates SCSI HDD.
- *
- * In the RaSCSI, there are Ethernet device emulator.
- * And driver is present for human68k.
- * 
- * 
- * 
- */
-
-
-/* This driver is modified from if_se.c, so the comments under this is
- * the comments for if_se.c
- * Also thanks to the authors of if_se.c
- *
- * ---------------------------------------------------------------------
  * Driver for Cabletron EA41x scsi ethernet adaptor.
  *
  * Written by Ian Dall <ian.dall@dsto.defence.gov.au> Feb 3, 1997
@@ -69,9 +45,8 @@
  * commands are 6 bytes long, but the recv data is only 1 byte.  Data
  * must be received by periodically polling the device with the recv
  * command.
- */
-
-/* This driver is also a bit unusual. It must look like a network
+ *
+ * This driver is also a bit unusual. It must look like a network
  * interface and it must also appear to be a scsi device to the scsi
  * system. Hence there are cases where there are two entry points. eg
  * sestart is to be called from the scsi subsytem and ras_ifstart from
