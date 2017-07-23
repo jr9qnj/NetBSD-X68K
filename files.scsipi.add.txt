@@ -1,0 +1,7 @@
+﻿if_ras.cを認識させるために、以下の3行を追加してください
+
+
+device  ras: ifnet, ether, arp
+attach  ras at scsibus
+file    dev/scsipi/if_ras.c             ras                     needs-flag
+
