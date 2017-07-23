@@ -1,0 +1,6 @@
+﻿/usr/src/sys/arch/x68k/conf/の　GENERICをRSCSIという名前でコピーし、以下の行を追加します。
+
+----------
+ras*  at scsibus? target ? lun ?      # SCSI ETH
+----------
+
